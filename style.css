@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 70%;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.card .heading {
+    background: #ff7979;
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: .2em;
+}
+
+.formgroup {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formgroup input,
+span {
+    margin: 30px 0;
+}
+
+.formgroup span {
+    position: absolute;
+    top: 8px;
+}
+
+.formgroup input {
+    border: none;
+    outline: none;
+    width: 40%;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.171);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit input {
+    width: 20%;
+    background: #eb4d4b;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-family: cursive;
+    border-radius: 4px;
+    margin: 0 0 20px 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    Copy Text
+}
+
+.submit input:hover {
+    color: #eb4d4b;
+    background: white;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+    background: #719cd4;
+    height: 40px;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    padding: auto;
+}
+
+.output {
+    text-align: center;
+    margin: 10px;
+}
+
+.output span {
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 450;
+}
+
+@media only screen and (max-width: 600px) {
+    .formgroup {
+        flex-direction: column;
+    }
+    .formgroup input,
+    span {
+        margin: 30px auto;
+        width: 70%;
+        height: 40px;
+    }
+    .formgroup span {
+        top: 30%;
+        left: 50%;
+    }
+    .submit input {
+        width: 40%;
+    }
+}
