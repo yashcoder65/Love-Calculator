@@ -1,136 +1,120 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background: url(background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    margin: auto;
+    background-image: url(./images/coupl.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:460px) {
+    body {
+        display: none;
+    }
+}
+
+h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-align: center;
+    background: #FF4D4D;
+}
+
+header {
+    width: 333px;
+    height: 400px;
+    margin: 150px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.card {
-    width: 70%;
-    background: white;
-    position: relative;
-    border-radius: 6px;
-}
-
-.card .heading {
-    background: #ff7979;
-    color: white;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    letter-spacing: .2em;
-}
-
-.formgroup {
-    position: relative;
+#form {
+    width: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.formgroup input,
-span {
-    margin: 30px 0;
+#form img {
+    width: 60px;
+    height: 59px;
+    align-self: center;
+    margin: 20px;
+    animation: bounce 1.5s infinite ease;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .5));
 }
 
-.formgroup span {
-    position: absolute;
-    top: 8px;
+@keyframes bounce {
+    from {
+        transform: scale(0, 0);
+    }
+    to {}
 }
 
-.formgroup input {
+input {
     border: none;
-    outline: none;
-    width: 40%;
-    font-weight: 400;
+    border-radius: 4px;
+    height: 4vh;
+    padding-left: 30px;
     font-size: 20px;
-    font-family: serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#form input.first {
+    margin-top: 60px;
+}
+
+input.btn {
     text-align: center;
-    height: 30px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.171);
+    padding: 0;
+    width: 50%;
+    align-self: center;
+    margin-top: 50px;
+    background: #EB5757;
+    color: #FFFFFF;
+    font-weight: 200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.submit {
-    display: flex;
-    justify-content: center;
+.btn:hover {
+    background: rgb(221, 50, 50);
 }
 
-.submit input {
-    width: 20%;
-    background: #eb4d4b;
+h2 {
     color: white;
-    border: none;
-    font-size: 30px;
-    font-family: cursive;
-    border-radius: 4px;
-    margin: 0 0 20px 0;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    Copy Text
-}
-
-.submit input:hover {
-    color: #eb4d4b;
-    background: white;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 .footer {
-    background: #719cd4;
-    height: 40px;
+    background: rgba(0, 0, 0, .7);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #FFFFFF;
     text-align: center;
-}
-
-.footer p {
-    color: white;
-    font-size: 1.2em;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    padding: auto;
-}
-
-.output {
-    text-align: center;
-    margin: 10px;
-}
-
-.output span {
-    font-size: 25px;
-    color: black;
-    font-family: sans-serif;
-    font-weight: 450;
-}
-
-@media only screen and (max-width: 700px) {
-    .formgroup {
-        flex-direction: column;
-    }
-    .formgroup input,
-    span {
-        margin: 30px auto;
-        width: 70%;
-        height: 40px;
-    }
-    .formgroup span {
-        top: 30%;
-        left: 50%;
-    }
-    .submit input {
-        width: 40%;
-    }
+    font-size: 22px;
 }
