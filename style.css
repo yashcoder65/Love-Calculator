@@ -16,12 +16,6 @@ body {
     background-attachment: fixed;
 }
 
-@media screen and (min-width: 460px) {
-    body {
-        display: none;
-    }
-}
-
 h1 {
     font-family: Poppins;
     font-style: normal;
@@ -81,6 +75,7 @@ input {
 
 #form input.first {
     margin-top: 60px;
+    position: relative;
 }
 
 input.btn {
@@ -120,4 +115,31 @@ p {
     color: #ffffff;
     text-align: center;
     font-size: 22px;
+}
+
+@media screen and (min-width: 460px) {
+    body {
+        background-image: url(./images/background.jpg);
+    }
+    header {
+        width: 55%;
+        height: 50vh;
+        align-self: center;
+    }
+    .footer {
+        height: 8vh;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    input {
+        font-size: 30px;
+    }
+    h2 {
+        margin-top: 10%;
+        color: black;
+    }
+    input.btn {
+        width: 200px;
+    }
 }
